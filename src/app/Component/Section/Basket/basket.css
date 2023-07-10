@@ -1,0 +1,92 @@
+.page__basket {
+    padding: 50px 0;
+}
+
+.basket-sec__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    margin: 0 0 20px 0;
+}
+
+.basket-sec__items {}
+
+.basket-item__name.sec p {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.basket-item__price.sec {
+    color: rgba(138, 138, 138, 1);
+}
+
+.basket-item__price.sec span {
+    color: black;
+}
+
+.basket-form {
+    display: flex;
+    gap: 20px;
+}
+
+.basket-form__data-user,
+.basket__nova-pochta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.data-user-form__label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.basket__nova-pochta label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.basket__nova-pochta select {
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 10px 0 0 0;
+    background: rgba(245, 245, 245, 1);
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+.data-user-form__input {
+    background: rgba(245, 245, 245, 1);
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 250px;
+    outline: none;
+    height: 35px;
+    margin: 10px 0 0 0;
+}
+
+.basket-content__total-amount.sec {
+    margin: 30px 0 0 0;
+}
+
+.wrapper-select {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#cityInput {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 250px;
+    position: absolute;
+    top: 40px;
+    z-index: 1;
+}

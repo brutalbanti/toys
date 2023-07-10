@@ -1,0 +1,189 @@
+.authentication__section {
+    pointer-events: none;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    transition: all 0.3s ease 0s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.authentication__section.active {
+    pointer-events: all;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.295);
+    z-index: 2;
+}
+
+.login-section {
+    position: relative;
+}
+
+.close-popup-btn {
+    position: absolute;
+    top: -70px;
+    right: -31px;
+    cursor: pointer;
+}
+
+.authentication__content {
+    transform: scale(0);
+    background: white;
+    border-radius: 10px;
+    padding: 20px 40px;
+    width: 450px;
+    transition: all 0.3s ease 0s;
+    margin: 0 15px;
+}
+
+
+.authentication__content.active {
+    transform: scale(1);
+}
+
+.tabs-login {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabs-button-login {
+    width: 100%;
+    background: transparent;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.tabs-button-login.in {
+    border-bottom: 3px solid white;
+    padding: 0 0 10px 0;
+    position: relative;
+}
+
+.tabs-button-login.in::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    transition: width .3s ease 0s;
+    background: orange;
+    bottom: -2.8px;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.tabs-button-login.in.active::after {
+    position: relative;
+}
+
+.tabs-button-login.in:hover::after {
+    width: 50%;
+}
+
+.tabs-button-login.in.active {
+    border-bottom: 3px solid orange;
+}
+
+.tabs-button-login.up {
+    border-bottom: 3px solid white;
+    padding: 0 0 10px 0;
+    position: relative;
+}
+
+.tabs-button-login.up::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    transition: width .3s ease 0s;
+    background: orange;
+    bottom: -2.5px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tabs-button-login.up.active::after {
+    position: relative;
+}
+
+.tabs-button-login.up:hover::after {
+    width: 50%;
+}
+
+.tabs-button-login.up.active {
+    border-bottom: 3px solid orange;
+}
+
+.login-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 30px 0 20px 0;
+}
+
+.input-component {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-component label {
+    font-size: 14px;
+}
+
+.login__input {
+    padding: 10px 10px;
+    background: rgba(245, 245, 245, 1);
+    border-radius: 5px;
+    outline: none;
+}
+
+.login__button {
+    padding: 12px 0;
+    background: rgb(208, 146, 30);
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    width: 185px;
+    border-radius: 10px;
+}
+
+.button-block {
+    display: flex;
+    justify-content: center;
+}
+
+.login__button:hover {
+    background: rgb(216, 154, 39);
+}
+
+@media (max-width: 400.98px) {
+    .tabs-button-login {
+        font-size: 14px;
+    }
+
+    .login__button {
+        font-size: 13px;
+    }
+    .input-component label {
+        font-size: 13x;
+    }
+}
+
+.error-message-login {
+    font-size: 14px;
+    color: brown;
+    font-weight: 600;
+}

@@ -1,0 +1,42 @@
+.page__banner {
+    padding: 30px 0;
+}
+
+.banner__container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.banner-image {}
+
+.banner-content {
+    background-image: url('../../../source/main/banner.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 1168px;
+    height: 245px;
+    border-radius: 10px;
+    position: relative;
+}
+
+@media (max-width: 991.98px) {
+    .banner-content {
+        height: 185px;
+    }
+}
+@media (max-width: 696.98px) {
+    .banner-content {
+        height: 140px;
+    }
+}
+@media (max-width: 497.98px) {
+    .banner-content {
+        height: 90px;
+    }
+}
+@media (max-width: 331.98px) {
+    .banner-content {
+        height: 70px;
+    }
+}
