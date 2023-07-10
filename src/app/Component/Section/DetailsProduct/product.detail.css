@@ -375,7 +375,7 @@
     margin: 15px 0 0 0;
     color: black;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     font-size: 14px;
 }
 

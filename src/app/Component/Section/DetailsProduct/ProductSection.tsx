@@ -4,7 +4,7 @@ import { collection, getDocs } from "firebase/firestore";
 import { useRouter } from "next/router";
 import './product.detail.css'
 import Image from "next/image";
-import ReactHtmlParser from 'react-html-parser';
+import ReactHtmlParser from 'html-react-parser';
 import heart from 'src/source/main/heart.svg';
 import heartSelect from 'src/source/main/heart-select.svg';
 
